@@ -1,0 +1,35 @@
+.root {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 5px;
+}
+
+.header-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 15px;
+  border-bottom: 5px solid #232c3b;
+}
+
+.header-container h1 {
+  font-size: 2.2rem;
+  font-weight: 300;
+}
+
+.header-saldo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.header-saldo h4 {
+  font-size: 0.7rem;
+  font-weight: var(--table-header-font-weight);
+}
+
+.header-saldo span {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: var(--primary_color);
+}
