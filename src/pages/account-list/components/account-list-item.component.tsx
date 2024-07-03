@@ -43,7 +43,6 @@ export const AccountListItemComponent: React.FC<Props> = (props) => {
         <Link
           to={generatePath(appRoutes.movements, {
             id: accountItem.id,
-            iban: accountItem.iban,
           })}
         >
           {accountItem.iban}
