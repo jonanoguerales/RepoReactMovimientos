@@ -1,5 +1,5 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import { generatePath, Link } from "react-router-dom";
 import { appRoutes, routesPrefixes } from "@/core/router";
 import classes from "./navbar.component.module.css";
 import { useLocation } from "react-router-dom";
@@ -26,7 +26,9 @@ export const NavbarComponent: React.FC = () => {
               : ""
           }
         >
-          <Link to={appRoutes.movements}>Movimientos</Link>
+          <Link to={generatePath(appRoutes.movements, { id: "1" })}>
+            Movimientos
+          </Link>
         </li>
         <li
           className={

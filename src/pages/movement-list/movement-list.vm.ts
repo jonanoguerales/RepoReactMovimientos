@@ -3,7 +3,7 @@ export interface MovementVm {
   transaction: Date;
   realTransaction: Date;
   description: string;
-  amount: string;
-  balance: string;
+  amount: number;
+  balance: number;
   accountId: string;
 }

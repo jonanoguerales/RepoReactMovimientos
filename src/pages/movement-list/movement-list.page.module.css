@@ -33,3 +33,14 @@
   font-weight: 600;
   color: var(--primary_color);
 }
+
+.alias-iban {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.alias-iban h2 {
+  font-weight: var(--table-header-font-weight);
+}

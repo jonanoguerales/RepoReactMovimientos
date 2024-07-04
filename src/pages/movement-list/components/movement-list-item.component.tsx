@@ -14,17 +14,23 @@ export const MovementListItemComponent: React.FC<Props> = (props) => {
       <span className={`${classes.dataCell} ${classes.bold}`}>
         {movementItem.transaction.toLocaleDateString()}
       </span>
-      <span className={classes.dataCell}>
+      <span className={`${classes.dataCell} ${classes.bold}`}>
         {movementItem.realTransaction.toLocaleDateString()}
       </span>
-      <span className={`${classes.dataCell} ${classes.alignRight}`}>
+      <span className={`${classes.dataCell} ${classes.bold}`}>
         {movementItem.description}
       </span>
-      <span className={`${classes.dataCell} ${classes.alignRight}`}>
+      <span
+        className={`${classes.dataCell} ${classes.alignRight} ${classes.bold} ${
+          Number(movementItem.amount) < 0 ? classes.negativo : ""
+        }`}
+      >
         {movementItem.amount}
       </span>
-      <span className={`${classes.dataCell} ${classes.selectContainer}`}>
-        {movementItem.balance}
+      <span
+        className={`${classes.dataCell} ${classes.alignRight} ${classes.bold}`}
+      >
+        {movementItem.balance} €
       </span>
     </div>
   );
